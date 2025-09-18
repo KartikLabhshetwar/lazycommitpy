@@ -1,7 +1,8 @@
 <div align="center">
   <div>
     <h1 align="center">lazycommitpy</h1>
-<img width="2816" height="1536" alt="lazycommit" src="https://github.com/user-attachments/assets/ee0419ef-2461-4b45-8509-973f3bb0f55c" />
+<img width="2816" height="1536" alt="lazycommit" src="https://github.com/user-attachments/assets/84450c76-60ab-4edf-888d-4b515902ea63" />
+
 
   </div>
 	<p>A Python CLI that writes your git commit messages for you with AI using Groq. Never write a commit message again.</p>
