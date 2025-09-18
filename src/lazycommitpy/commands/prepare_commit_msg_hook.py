@@ -29,7 +29,7 @@ def run(message_file: str, commit_source: str | None) -> None:
         return
     
     try:
-        console.print(Panel.fit("lazycommit", title="🤖 AI Commit", subtitle="Powered by Groq", style="cyan"))
+        console.print(Panel.fit("lazycommit", title="", subtitle="", style="cyan"))
         
         # Load config with environment variables
         env = os.environ
@@ -46,7 +46,7 @@ def run(message_file: str, commit_source: str | None) -> None:
         if not cfg:
             return
         
-        with console.status("[bold blue]🤖 The AI is analyzing your changes..."):
+        with console.status("[bold blue]the generated commit messages..."):
             msgs = generate_commit_message(
                 cfg["GROQ_API_KEY"],
                 cfg["model"],
@@ -73,7 +73,7 @@ def run(message_file: str, commit_source: str | None) -> None:
         instructions = ""
         
         if supports_comments:
-            instructions = f"# 🤖 AI generated commit{'s' if has_multiple_messages else ''}\n"
+            instructions = f"# AI generated commit{'s' if has_multiple_messages else ''}\n"
         
         if has_multiple_messages:
             if supports_comments:

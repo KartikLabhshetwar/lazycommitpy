@@ -30,11 +30,11 @@ def run(generate: int | None, exclude: list[str], stage_all: bool, commit_type: 
     """Run the main lazycommit command."""
     console.print(ASCII_LOGO)
     console.print()
-    console.print(Panel.fit("lazycommit", title="🤖 AI Commit", subtitle="Powered by Groq", style="cyan"))
+    console.print(Panel.fit("lazycommit", title="", subtitle="", style="cyan"))
     
     assert_repo()
 
-    with console.status("[bold blue]Detecting staged files...") as status:
+    with console.status("[bold blue] detecting staged files...") as status:
         if stage_all:
             sp.run(["git", "add", "--update"], check=True)
         
@@ -51,7 +51,7 @@ def run(generate: int | None, exclude: list[str], stage_all: bool, commit_type: 
         status.stop()
         
         if is_large_diff:
-            console.print(f"📁 Detected {total_files} staged file{'s' if total_files != 1 else ''}:")
+            console.print(f"detected {total_files} staged file{'s' if total_files != 1 else ''}:")
             for file in staged["files"]:
                 console.print(f"     {file}")
             console.print("\n⚠️  Large diff detected - using chunked processing")
@@ -67,7 +67,7 @@ def run(generate: int | None, exclude: list[str], stage_all: bool, commit_type: 
     })
 
     # Generate commit messages
-    with console.status("[bold blue]🤖 The AI is analyzing your changes...") as status:
+    with console.status("[bold blue] generating commit messages...") as status:
         if is_large_diff:
             # Try compact summary first for very large diffs
             compact = build_compact_summary(exclude, 25)
