@@ -1,9 +1,6 @@
 <div align="center">
   <div>
     <h1 align="center">lazycommitpy</h1>
-<img width="2816" height="1536" alt="lazycommit" src="https://github.com/user-attachments/assets/84450c76-60ab-4edf-888d-4b515902ea63" />
-
-
   </div>
 	<p>A Python CLI that writes your git commit messages for you with AI using Groq. Never write a commit message again.</p>
 	<a href="https://pypi.org/project/lazycommitpy/"><img src="https://img.shields.io/pypi/v/lazycommitpy" alt="Current version"></a>
@@ -383,12 +380,6 @@ This Python implementation includes several enhancements over the Node.js versio
 - Python 3.9 or higher
 - Git (for repository operations)
 - Internet connection (for Groq API)
-
-## Dependencies
-
-- `typer`: Modern CLI framework
-- `groq`: Official Groq Python client
-- `rich`: Beautiful terminal formatting
 
 ## Maintainers
 

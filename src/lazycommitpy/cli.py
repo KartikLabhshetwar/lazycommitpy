@@ -100,7 +100,7 @@ def default(
 ) -> None:
     """Generate AI-powered commit messages."""
     if version:
-        console.print("lazycommitpy 0.1.0")
+        console.print("lazycommitpy 0.1.2")
         return
     
     if ctx.invoked_subcommand is not None:
