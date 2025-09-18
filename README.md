@@ -240,11 +240,6 @@ lazycommit config set proxy=
 
 Default: `openai/gpt-oss-120b`
 
-The Groq model to use for generating commit messages. Popular options:
-- `openai/gpt-oss-120b` (default)
-- `llama-3.1-70b-versatile`
-- `mixtral-8x7b-32768`
-
 #### timeout
 
 The timeout for network requests to the Groq API in milliseconds.
@@ -397,10 +392,6 @@ This Python implementation includes several enhancements over the Node.js versio
 ## Maintainers
 
 - **Kartik Labhshetwar**: [@KartikLabhshetwar](https://github.com/KartikLabhshetwar)
-
-## Contributing
-
-If you want to help fix a bug or implement a feature in [Issues](https://github.com/KartikLabhshetwar/lazycommitpy/issues), checkout the [Contribution Guide](CONTRIBUTING.md) to learn how to setup and test the project.
 
 ## License
 
